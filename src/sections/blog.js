@@ -14,30 +14,30 @@ const data = [
   {
     id: 1,
     image: news1,
-    title: 'Introducing our newest team with great experience',
+    title: 'The basics of patent licensing',
     desc:
-      'Brian Halligan knows that you need more than a great product to have a great brand.',
-    link: '#',
+      '',
+    link: '',
   },
   {
     id: 2,
     image: news2,
     title:
-      'New banking application has  developed and we expecting good feedback',
+      'How to find a patent licensing partner',
     desc: '',
-    link: '#',
+    link: '',
   },
   {
     id: 3,
     image: news3,
-    title: 'Ui/UX industry are doing great job in previous year history',
+    title: 'Case studies of successful patent licensing deals',
     desc: '',
     link: '',
   },
   {
     id: 4,
     image: news4,
-    title: 'Develop you design experience with figma features.',
+    title: 'Expert insights on patent licensing',
     desc: '',
     link: '',
   },

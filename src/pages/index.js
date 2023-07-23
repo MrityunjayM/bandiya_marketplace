@@ -8,6 +8,7 @@ import Pricing from "sections/pricing";
 import Support from "sections/support";
 import UltimateFeatures from "sections/ultimate-features";
 import UserPricing from "sections/user-pricing";
+import PricingModel from "sections/pricing-model";
 import theme from "theme";
 import { jsx,ThemeProvider } from "theme-ui";
 
@@ -15,7 +16,7 @@ export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
-        
+
         {/* <SEO title="Agency Digital" description="Collection of free top of the line startup landing templates built using react/ next js. Free to download, simply edit and deploy! Updated weekly!" /> */}
       <SEO
           title="Marketplace of patent licencing"
@@ -24,8 +25,9 @@ export default function IndexPage() {
         <Banner />
         <UltimateFeatures />
         <CustomerSupport />
-        <Pricing />
-        <UserPricing />
+        {/* <PricingModel/> */}
+        {/* <Pricing /> */}
+        {/* <UserPricing /> */}
         <Support />
         {/* <Clients /> */}
         <Blog />

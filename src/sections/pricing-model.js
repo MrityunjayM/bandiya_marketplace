@@ -4,35 +4,31 @@ import { jsx, Box, Container, Grid, Heading, Text } from 'theme-ui';
 import { IoIosCheckmarkCircle } from 'react-icons/io';
 import Image from 'components/image';
 import support from 'assets/images/support.png';
-import patent from "assets/images/patent.jpg"
-
 
 const list = [
-  "The patent's claims",
-  'The prior art',
-  'The market for invention',
-  'The value of the patent',
+//   "The patent's claims",
+//   'The prior art',
+//   'The market for invention',
+//   'The value of the patent',
 ];
 
-const CustomerSupport = () => {
+const PricingModel = () => {
   return (
-    <Box as="section" sx={styles.section} style={{"padding-top":"0px"}} >
+    <Box as="section" sx={styles.section}>
       <Container>
-        <Box sx={styles.grid} >
-          <Box sx={styles.illustration}>
-            <Image src={patent} loading="lazy" alt="support" />
-          </Box>
-          <Box sx={styles.content} style={{"padding-left":"20px"}}>
-            <Heading sx={styles.title} style={{"padding-top":"80px"}}>
+        <Box sx={styles.grid}>
+          
+          <Box sx={styles.content}>
+            <Heading sx={styles.title}>
             Patent licensing is not rocket science, but it's close.
             </Heading>
             <Text as="p" sx={styles.summary}>
-            Patent  licensing can be a complex process for individuals, but it doesn't have to be. A PVR is a detailed analysis about the patent which helps to figure out its market potential and value estimation. A PVR typically includes the following information:
+            Patent licensing can be a complex process for individuals, but it doesn't have to be. A PVR is a detailed analysis about the patent which helps to figure out its market potential and value estimation. A PVR typically includes the following information:
             </Text>
 
-            <Grid sx={styles.list} as="ul" style={{"margin-left":"30px"}}>
+            <Grid sx={styles.list} as="ul">
               {list.map((item, i) => (
-                <Text as="li" key={i} style={{"display":"inline","text-wrap":"nowrap",}}>
+                <Text as="li" key={i}>
                   <IoIosCheckmarkCircle
                     sx={{ color: 'primary', mr: 2 }}
                     size="20px"
@@ -42,13 +38,18 @@ const CustomerSupport = () => {
               ))}
             </Grid>
           </Box>
+          
+          <Box sx={styles.illustration}>
+            <Image src={support} loading="lazy" alt="support" />
+          </Box>
+
         </Box>
       </Container>
     </Box>
   );
 };
 
-export default CustomerSupport;
+export default PricingModel;
 
 const styles = {
   section: {
@@ -63,14 +64,13 @@ const styles = {
     gridTemplateColumns: ['1fr', null, null, null, '470px 1fr', '1fr 549px'],
   },
   illustration: {
-  
     textAlign: 'center',
     position: 'relative',
     display: 'flex',
     alignItems: 'center',
     mt: [2, null, null, 0, 4, 0],
     img: {
-      // maxWidth: ['100%', null, null, null, null, '100%'],
+      maxWidth: ['100%', null, null, null, null, '100%'],
     },
   },
   content: {

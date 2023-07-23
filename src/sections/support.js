@@ -6,19 +6,20 @@ import Image from 'components/image';
 import illustration from 'assets/images/support-2.png';
 import icon1 from 'assets/images/icons/1.png';
 import icon2 from 'assets/images/icons/2.png';
+import frank from "assets/images/frank.png";
 
 const data = [
   {
     id: 1,
     icon: icon1,
     title: 'Email client support',
-    text: `Ultimate access to all credit popular exercises and assessments materials`,
+    text: `team@bandiya.com`,
   },
   {
     id: 2,
     icon: icon2,
-    title: 'Live ticket support',
-    text: `Total assessment corrections with live support tickets download access system`,
+    title: 'Call us directly',
+    text: `+917878190445`,
   },
 ];
 
@@ -33,9 +34,7 @@ const Support = () => {
                 Do you need help? Our support team ready to help you
               </Heading>
               <Text as="p" sx={styles.summary}>
-                Get your tests delivered at let home collect sample from the
-                victory of the managements that supplies best design system
-                guidelines ever.
+              Our customer support team is available 24/7 to answer your questions and help you with any problems you may have..
               </Text>
             </div>
             {/* <SectionHeading
@@ -48,7 +47,7 @@ const Support = () => {
             ))}
           </div>
           <Box as="figure" sx={styles.illustration} className="illustration">
-            <Image src={illustration} alt="illustration" />
+            <Image src={frank} alt="illustration" />
           </Box>
         </div>
       </Container>

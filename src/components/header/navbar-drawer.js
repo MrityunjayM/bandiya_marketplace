@@ -10,6 +10,10 @@ import menuItems from './header.data';
 import close from 'assets/images/icons/close.png';
 import BandiyaLogo from "assets/images/logo_bandiya.png";
 
+const changeUrl =()=>{
+  window.location.href="https://calendly.com/sakar-baxi/patent-discussion" 
+}
+
 const NavbarDrawer = () => {
   const { state, dispatch } = useContext(DrawerContext);
 
@@ -59,9 +63,15 @@ const NavbarDrawer = () => {
             </Box>
           ))}
         </Box>
-        <Button variant="primary" sx={styles.donateNow}>
-          Donate Now
-        </Button>
+         
+        <Button variant="primary" sx={styles.donateNow} onClick={changeUrl}>
+          Request Demo
+        </Button>     
+        {/* <a href="https://calendly.com/sakar-baxi/patent-discussion">
+                <Button variant="primary" sx={styles.donateNow}>
+          Request Demo
+        </Button>       
+              </a>        */}
       </Box>
     </Drawer>
   );

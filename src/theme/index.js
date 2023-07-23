@@ -3,7 +3,7 @@ import { rgba } from "polished";
 export default {
   // example colors with dark mode
   colors: {
-    text: "#343D48", // body color and primary color
+    text: "#ffffff", // body color and primary color
     textSecondary: "#ffffff", // secondary body color
     heading: "#ffffff", // primary heading color
     headingSecondary: "#ffffff", // heading color
